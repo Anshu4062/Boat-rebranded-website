@@ -1,0 +1,83 @@
+@import url("./FontCss.css");
+
+#Footer {
+  background: #363636;
+  font-family: Metropolis-Black;
+  color: #ffffff;
+  display: none;
+}
+
+#Footer h1:hover,
+#Footer p:hover,
+#Footer li:hover,
+#Footer img:hover,
+#Footer span:hover {
+  cursor: pointer;
+}
+
+#Footer .content__inner {
+  width: 90%;
+  margin: 40px 40px 420px 40px;
+  padding: 10px;
+}
+
+#Footer .copy {
+  border: 1px solid #2e2e27;
+  border-radius: 40px;
+}
+
+#Footer h1 {
+  color: #fff;
+  font-size: 5em;
+  padding: 20px 0 20px 0;
+}
+
+#Footer p {
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+  padding: 0 0 40px 0;
+  /*font-family: "Monument Extended";*/
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: 300;
+}
+
+#Footer .fixed_footer {
+  width: 100%;
+  height: 350px;
+  background: #383838;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+#Footer .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Footer li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+}
+
+#Footer .col li:first-child {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+#Footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+  opacity: 0.5;
+  margin: 6em 0 0 0;
+}

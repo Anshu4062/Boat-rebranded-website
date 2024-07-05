@@ -1,0 +1,140 @@
+@import url("./FontCss.css");
+#Press {
+  background-color: #000;
+  position: relative;
+}
+#Best-Sellers .press_header {
+  font-family: var(--body-font);
+  font-weight: 100 !important;
+  font-size: 30px;
+  margin-left: 20px;
+}
+#Press .press_header span {
+  font-size: 40px;
+  position: relative;
+  font-family: Monument Extended;
+}
+#Press .press_header span::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0px;
+  width: 100px;
+  height: 3px;
+  background: red;
+}
+#Press::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.04;
+  z-index: 10;
+  pointer-events: none;
+  background: url(../assets/noise.gif);
+}
+
+#Press .wrapper {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#Press .comparisonSection {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#Press .press-container {
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+  width: 1000px;
+  height: 60vh;
+  object-fit: cover; /* object-cover */
+  background-color: rgb(
+    255,
+    0,
+    0
+  ); /* bg-[red] (Replace `red` with the actual shade you need) */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  background-color: #222;
+  background-image: linear-gradient(
+      25deg,
+      transparent 65%,
+      rgb(184, 20, 20),
+      transparent 70%
+    ),
+    linear-gradient(-25deg, transparent 65%, rgb(184, 20, 20), transparent 70%),
+    linear-gradient(-25deg, transparent 30%, rgb(184, 20, 20), transparent 35%),
+    linear-gradient(25deg, transparent 30%, rgb(184, 20, 20), transparent 35%),
+    linear-gradient(65deg, transparent 65%, rgb(184, 20, 20), transparent 70%),
+    linear-gradient(-65deg, transparent 65%, rgb(184, 20, 20), transparent 70%),
+    linear-gradient(-65deg, transparent 30%, rgb(184, 20, 20), transparent 35%),
+    linear-gradient(65deg, transparent 30%, rgb(184, 20, 20), transparent 35%);
+  background-size: 5em 2em, 5em 2em, 5em 2em, 5em 2em, 2em 5em, 2em 5em, 2em 5em,
+    2em 5em;
+}
+
+#Press .press-container h1 {
+  font-size: 1.5rem;
+}
+#Press .press-container .PressImg {
+  width: 20%;
+  background: white;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#Press .quotes-img {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  filter: invert(100%);
+  height: 80px;
+  background: #00ffff;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+#Press .afterImage .quotes-img {
+  left: 55%;
+}
+#Press .afterImage {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translate(100%, 0px);
+}
+
+#Press .thirdImage .quotes-img {
+  left: 55%;
+}
+#Press .thirdImage {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translate(100%, 0px);
+}
+
+#Press .afterImage img {
+  transform: translate(-100%, 0px);
+}
+
+#Press .thirdImage img {
+  transform: translate(-100%, 0px);
+}
+
+/*# sourceMappingURL=style.css.map */

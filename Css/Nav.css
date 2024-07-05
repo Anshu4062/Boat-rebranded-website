@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julee&family=Lakki+Reddy&family=Nosifer&display=swap");
+@import url("./FontCss.css");
+#nav a {
+  text-decoration: none;
+  color: #cdc6be;
+}
+#nav {
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-family: Metropolis-Black;
+}
+#nav nav {
+  position: fixed;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  z-index: 3;
+  color: #cdc6be;
+  background: #1412125a;
+  backdrop-filter: blur(10px);
+}
+
+#nav nav > div {
+  flex: 1;
+}
+
+#nav .logo {
+  text-align: center;
+}
+#nav .logo a {
+  text-align: center;
+  font-size: 30px;
+  color: #cdc6be;
+}
+#nav .logo a img {
+  width: 80px;
+}
+
+#nav .toggle-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav .burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75em 2em 1.5em 2em;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  width: 28px;
+  height: 20px;
+  transition: all 250ms ease-out;
+}
+#nav .burger::before,
+#nav .burger::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: #cdc6be;
+  transition: all 250ms ease-out;
+  will-change: transform;
+}
+#nav .burger::before {
+  transform: translateY(-3px);
+}
+#nav .burger::after {
+  transform: translateY(3px);
+}
+#nav .active.burger::before {
+  transform: translateY(0) rotate(45deg);
+}
+#nav .active.burger::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+#nav .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #1414125a;
+  backdrop-filter: blur(10px);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  will-change: transform;
+}
+
+#nav .overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+#nav .menu-items {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}
+
+#nav .menu-items p {
+  position: relative;
+  text-align: center;
+  font-size: 5vw;
+  line-height: 90%;
+  text-transform: uppercase;
+  will-change: transform;
+  transition: letter-spacing 0.3s;
+}
+#nav .menu-items p:hover {
+  letter-spacing: 0.075em;
+}
+
+#nav .menu-items p#active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  background: red;
+  width: 0;
+  height: 7px;
+}
+#nav .sub-menu {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+}
+
+#nav .sub-menu p {
+  font-size: 20px;
+}
+
+#nav .line {
+  position: fixed;
+  top: 4.5em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #cdc6be;
+  transform-origin: 1/2;
+  width: 0;
+  transition: width 250ms ease-in-out;
+}

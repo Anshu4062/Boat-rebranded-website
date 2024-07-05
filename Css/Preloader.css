@@ -1,0 +1,124 @@
+/* PRE LOADER */
+
+@font-face {
+  font-family: Metropolis-Black;
+  src: url("../Fonts/Metropolis-Black.otf");
+}
+#preLoader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: red;
+}
+
+#preLoader .l-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2em 2em;
+  overflow: hidden;
+}
+#preLoader .l-red-backgrond {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  background: rgb(255, 255, 255);
+}
+
+#preLoader .l-loader h1 {
+  font-size: 22vh;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-spacing: none;
+  white-space: none;
+  font-family: Metropolis-Black;
+}
+.font-A {
+  width: 120px;
+}
+#preLoader .l-loader h1.l-h-red {
+  color: red;
+  font-size: 36vh;
+  display: none;
+}
+
+/* #preLoader .l-loader h1.l-h-red:nth-child(1) {
+  display: block;
+}
+#preLoader .l-loader h1.l-h-red:nth-child(2) {
+  display: none;
+} */
+#preLoader .l-loader h1#l-h-7 {
+  margin: auto;
+}
+#preLoader .l-loader h1.l-h-white {
+  color: rgb(255, 255, 255);
+  line-height: 90%;
+  display: none;
+}
+
+#preLoader .l-loader h1.l-h-white:nth-child(even) {
+  margin-left: 30%;
+}
+
+#l-img {
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+  z-index: -1;
+  transform: translateY(100%);
+  width: 600px;
+  /* transform: translate(-50%, -50%); */
+}
+/* OLD */
+/* 
+#preLoader .l-loader .l-logo img {
+  width: 100px;
+  object-fit: cover;
+}
+
+#preLoader .l-loader .l-content {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#preLoader .l-loader .l-line {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+#preLoader .l-loader .l-text-content {
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+#preLoader .l-loader .l-text-content h1 {
+  font-size: 10em;
+  transform: translateY(100%);
+  line-height: 100%;
+  font-family: Canopee Regular;
+}
+
+#preLoader .l-loader .l-progress {
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+} */
+/* PRE LOADER END */

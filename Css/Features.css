@@ -1,0 +1,151 @@
+#Features {
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stack-area {
+  width: 100%;
+  height: 300vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.stack-area .right,
+.stack-area .left {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  flex-basis: 50%;
+}
+
+.stack-area .cards {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.stack-area .card {
+  width: 350px;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 35px;
+  border-radius: 6mm;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.stack-area .card:nth-child(1) {
+  background: rgb(64, 122, 255);
+  z-index: 6;
+}
+
+.stack-area .card:nth-child(2) {
+  background: rgb(221, 62, 88);
+  z-index: 5;
+}
+
+.stack-area .card:nth-child(3) {
+  background: rgb(186, 113, 245);
+  z-index: 4;
+}
+
+.stack-area .card:nth-child(4) {
+  background: rgb(247, 92, 208);
+  z-index: 3;
+}
+
+.stack-area .card:nth-child(5) {
+  background: rgb(221, 62, 88);
+  z-index: 2;
+}
+
+.stack-area .card:nth-child(6) {
+  background: rgb(64, 122, 255);
+  z-index: 1;
+}
+
+.stack-area .sub {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stack-area .content {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stack-area .card.active {
+  transform-origin: bottom left;
+}
+
+.stack-area .left {
+  align-items: center;
+  flex-direction: column;
+}
+
+.stack-area .title {
+  width: 520px;
+  font-size: 84px;
+  font-family: Metropolis-Black;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.stack-area .sub-title {
+  width: 520px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.stack-area .sub-title button {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  padding: 15px 30px;
+  background: rgb(255, 0, 0);
+  color: white;
+  border-radius: 8mm;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.stack-area .top,
+.stack-area .bottom {
+  width: 100%;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS Code for responsiveness */
+@media screen and (max-width: 800px) {
+  .stack-area .left {
+    position: relative;
+    width: 100vw;
+  }
+}
